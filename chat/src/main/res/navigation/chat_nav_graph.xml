@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_nav_graph"
+    app:startDestination="@id/inbox">
+
+    <fragment android:id="@+id/add_participant"
+        android:name="com.ht117.chat.addparticipant.AddParticipantFragment"/>
+
+    <fragment android:id="@+id/block_user"
+        android:name="com.ht117.chat.blockuser.BlockUserFragment"/>
+
+    <fragment android:id="@+id/chat"
+        android:name="com.ht117.chat.chat.ChatFragment"/>
+
+    <fragment android:id="@+id/chat_detail"
+        android:name="com.ht117.chat.chatdetail.ChatDetailFragment"/>
+
+    <fragment android:id="@+id/foward_message"
+        android:name="com.ht117.chat.forward.ForwardFragment"/>
+
+    <fragment android:id="@+id/create_group"
+        android:name="com.ht117.chat.group.CreateGroupFragment"/>
+
+    <fragment android:id="@+id/inbox"
+        android:name="com.ht117.chat.inbox.InboxFragment"/>
+
+    <fragment android:id="@+id/new_chat"
+        android:name="com.ht117.chat.newchat.NewChatFragment"/>
+
+    <fragment android:id="@+id/participants"
+        android:name="com.ht117.chat.participant.ParticipantsFragment"/>
+
+    <fragment android:id="@+id/report_message"
+        android:name="com.ht117.chat.report.ReportMessageFragment"/>
+
+    <fragment android:id="@+id/search_message"
+        android:name="com.ht117.chat.search.SearchFragment"/>
+
+    <fragment android:id="@+id/share_media"
+        android:name="com.ht117.chat.sharemedia.ShareMediaFragment"/>
+
+    <deepLink android:autoVerify="true"
+        app:uri="chatq://home"/>
+
+</navigation>

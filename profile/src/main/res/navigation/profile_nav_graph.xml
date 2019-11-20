@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/dashboard">
+
+    <fragment android:id="@+id/dashboard"
+        android:name="com.ht117.profile.dashboard.DashboardFragment"/>
+
+    <fragment android:id="@+id/language"
+        android:name="com.ht117.profile.language.LanguageFragment"/>
+
+    <fragment android:id="@+id/privacy"
+        android:name="com.ht117.profile.privacy.PrivacyFragment"/>
+
+    <fragment android:id="@+id/status"
+        android:name="com.ht117.profile.status.StatusFragment"/>
+
+    <fragment android:id="@+id/username"
+        android:name="com.ht117.profile.username.UsernameFragment"/>
+
+    <fragment android:id="@+id/profile"
+        android:name="com.ht117.profile.profile.ProfileFragment"/>
+
+</navigation>

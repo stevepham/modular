@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/authen_nav_graph"
+    app:startDestination="@id/onboard">
+
+    <fragment android:id="@+id/onboard"
+        android:name="com.ht117.authentication.onboard.OnboardFragment">
+
+        <action android:id="@+id/moveToSignName"
+            app:destination="@id/signname"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/signname"
+        android:name="com.ht117.authentication.signupname.SignupNameFragment">
+
+        <action android:id="@+id/moveToSignMobile"
+            app:destination="@id/signmobile"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/signmobile"
+        android:name="com.ht117.authentication.signupmobile.SignupMobileFragment">
+
+        <action android:id="@+id/moveToOtp"
+            app:destination="@id/otp"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/otp"
+        android:name="com.ht117.authentication.otp.OtpFragment"/>
+
+</navigation>
